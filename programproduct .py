@@ -18,7 +18,8 @@ translations = {
         'error_general': 'Ошибка: {}',
         'btn_lang':'Переключение языков:',
         'entry':'Строка ввода',
-        'exit':'Строка ответа'
+        'exit':'Строка ответа',
+        'analytic':'Аналитический вид числа'
     },
     'en': {
         'welcome': 'Welcome! Enter a number or expression below to get the square root',
@@ -31,7 +32,8 @@ translations = {
         'error_general': 'Error: {}',
         'btn_lang':'Switching languages:',
         'entry':'Input line',
-        'exit': 'Response line'
+        'exit': 'Response line',
+        'analytic':'Analytical form'
     },
     'china':{
         'welcome': '欢迎！ 输入下面的数字或表达式，您将获得平方根。',
@@ -44,7 +46,8 @@ translations = {
         'error_general': '错误：{}',
         'btn_lang':'切换语言:',
         'entry':'输入线',
-        'exit': '响应字符串'
+        'exit': '响应字符串',
+        'analytic':'数的解析形式'
     },
     'france':{
         'welcome': 'Bienvenue! Entrez un nombre ou une expression ci-dessous pour obtenir la racine carrée',
@@ -57,7 +60,8 @@ translations = {
         'error_general': 'Erreur: {}',
         'btn_lang':'Changer de langue:',
         'entry':"Ligne d'entrée",
-        'exit': "Ligne d'réponse"
+        'exit': "Ligne d'réponse",
+        'analytic':'Type analytique'
     },
     'espanol':{
         'welcome': '¡Bienvenidos! Ingrese un número o expresión a continuación para obtener la raíz cuadrada',
@@ -70,7 +74,8 @@ translations = {
         'error_general': 'Error: {}',
         'btn_lang': 'Cambio de idiomas:',
         'entry':"Cadena d'entrada",
-        'exit': "Cadena d'respuesta"
+        'exit': "Cadena d'respuesta",
+        'analytic':'Tipo analítico'
     }
 }
 
@@ -416,4 +421,5 @@ btn_tg = Button(window, bg='black', fg='white', font=20, text='tg', command=lamb
 btn_tg.place(x=336, y=150, width=50, height=50)
 
 window.mainloop()
+
 
