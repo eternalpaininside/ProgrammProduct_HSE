@@ -79,7 +79,7 @@ current_language = 'ru'
 
 # Создаем окно для программы
 window = Tk()
-window.title('Вывод корня')
+window.title('Sqrt.Calculate')
 window.resizable(None, None)
 window.geometry("1200x800")
 window.configure(background='#100873')  # голубой фон
@@ -416,3 +416,4 @@ btn_tg = Button(window, bg='black', fg='white', font=20, text='tg', command=lamb
 btn_tg.place(x=336, y=150, width=50, height=50)
 
 window.mainloop()
+
