@@ -200,7 +200,7 @@ def sqrt_symbolic(expression_str, precision=10):
                 symbolic_root = sqrt(expr)
                 symbolic_root = str(symbolic_root)
                 symbolic_root = symbolic_root.replace('sqrt', '√')
-                return symbolic_root
+                return f"+-({symbolic_root})"
 
         except (TypeError, ValueError, AttributeError):
             # Если evalf() не сработало или вернуло что-то неожиданное
@@ -208,7 +208,7 @@ def sqrt_symbolic(expression_str, precision=10):
             symbolic_root = sqrt(expr)
             symbolic_root=str(symbolic_root)
             symbolic_root=symbolic_root.replace('sqrt','√')
-            return symbolic_root
+            return f"+-({symbolic_root})"
 
     except (SyntaxError, TypeError, ValueError, NameError, AttributeError) as e:
         # Если sympy не смог разобрать выражение
@@ -254,6 +254,7 @@ def update_ui():
     accuracy_label.config(text=translations[current_language]['accuracy'])
     btn_clear_history.config(text=translations[current_language]['clear_history'])
     btn_result.config(text=translations[current_language]['result'])
+    btn_analityc.config(text=translations[current_language]['analytic'])
 
 
 def long_num(num, accuracy):
@@ -421,5 +422,6 @@ btn_tg = Button(window, bg='black', fg='white', font=20, text='tg', command=lamb
 btn_tg.place(x=336, y=150, width=50, height=50)
 
 window.mainloop()
+
 
 
